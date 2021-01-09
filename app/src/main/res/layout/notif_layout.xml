@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:background="@drawable/notif" />
+<!--
+
+  <TextView
+    android:id="@+id/tv_notif_content"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/iransans_bold"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="40dp"
+    android:layout_alignRight="@id/imageView"
+    android:text="اگر کاری را بخواهید انجام دهید راهش را پیدا می کنید و اگر کاری را نخواهید بهانش را "
+    android:textColor="@android:color/background_light"
+    android:textSize="10sp" />
+
+-->
+
+
+</RelativeLayout>

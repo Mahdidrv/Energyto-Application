@@ -1,0 +1,154 @@
+<resources>
+  <string name="app_name">انرژیتو</string>
+
+  <string name="quote1">بعضی وقت ها موفق می شوید بعضی وقتها یاد می گیرید....</string>
+  <string name="author1">رابرت کیوساکی</string>
+
+  <string name="quote2">بدتر از شکست خوردن در کاری شروع نکردن آن است...</string>
+  <string name="author2">ست گادین</string>
+
+  <string name="quote3">اگر دنبال آن یک نفری هستی که زندگی ات را تغییر دهد؛ همین الان برو جلوی آینه...</string>
+  <string name="author3">ناشناس</string>
+
+  <string name="quote4">چالش ها برای سرگرم کننده کردن زندگی هستند و غلبه بر آن باعث معنا دار شدن زندگی می شوند</string>
+  <string name="author4">جاشوه جی مارین</string>
+
+  <string name="quote5">از زندگی‌ات رؤیا و از رؤیاهایت واقعیت بساز.</string>
+  <string name="author5">آنتوان دوسنت اگزوپری</string>
+
+  <string name="quote6">وقتی امروز را قربانی می‌کنی، آینده را هم می‌کشی.</string>
+  <string name="author6">داوود ملکی</string>
+
+  <string name="quote7">اشتباهات آدمی، از او انسانی دوست‌داشتنی می‌سازد.</string>
+  <string name="author7">گوته</string>
+
+  <string name="quote8">بزرگ‌ترین اشتباه این است که کاری انجام ندهی، به‌خاطر اینکه فقط کار کوچکی از دستت بر می‌آید</string>
+  <string name="author8">سیدنی اسمیت</string>
+
+  <string name="quote9">هرگز ناامید نشوید؛ اگر شدید به کار کردن ادامه دهید.</string>
+  <string name="author9">ادموند بورک</string>
+
+  <string name="quote10">تو وقتی به پایان می‌رسی که تغییر یافتن در تو به پایان برسد.</string>
+  <string name="author10">بنجامین فرانکلین</string>
+
+  <string name="quote11">هیچ وقت رنگین کمان را نمی‌بینی اگر به پایین نگاه کنی.</string>
+  <string name="author11">چارلی چاپلین</string>
+
+  <string name="quote12">من یاد گرفتم که راه پیشرفت نه سریع و نه آسان است.</string>
+  <string name="author12">ماری کوری</string>
+
+  <string name="quote13">درست آن زمانی که تصمیم می‌گیرید که از ادامه راه منصرف شوید، از آنچه تصور می‌کنید به مقصد نزدیکترید.</string>
+  <string name="author13">باب پارسنز</string>
+
+  <string name="quote14">مهم نیست چقدر آهسته حرکت کنی تا زمانی که متوقف نشوی.</string>
+  <string name="author14">کنفوسیوس</string>
+
+  <string name="quote15">وقتی چیزی را از دست می‌دهید، درسی را که از آن گرفته اید از دست ندهید.</string>
+  <string name="author15">آنتونی رابینز</string>
+
+  <string name="quote16">فقط یک چیز می‌تواند رسیدن به یک رویا را ناممکن سازد: ترس از شکست</string>
+  <string name="author16">پائلو کوئیلو</string>
+
+  <string name="quote17">اگر از وضعیت چیزها راضی نیستی، آنها را تغییر بده. تو یک درخت نیستی!</string>
+  <string name="author17">جیم ران</string>
+
+  <string name="quote18">همان طور که یک کشتی بر لنگری کوچک تکیه نمی‌کند. زندگی نیز بر پایۀ امید اندک دوام نمی‌آورد.</string>
+  <string name="author18">ناشناس</string>
+
+  <string name="quote19">این امید نیست که در زندگی من را رها می‌کند. این منم که تصمیم می‌گیرم آن را ترک کنم یا نه.</string>
+  <string name="author19">ناشناس</string>
+
+  <string name="quote20">بیش از آنکه آینده را حوادث پیرامونی ما رقم بزنند این اعتماد به نفس ماست که آن را می‌سازد.</string>
+  <string name="author20">ناشناس</string>
+
+  <string name="quote21">برای سخت‌ترین اتفاق‌ها آماده‌ام، اما انتظار بهترین‌ها را دارم.</string>
+  <string name="author21">ناشناس</string>
+
+  <string name="quote22">از گذشته خود درس می‌گیرم. در امروز زندگی می‌کنم و به فردای خود امیدوارم.</string>
+  <string name="author22">ناشناس</string>
+
+  <string name="quote23">تنها در فرهنگ لغت می‌توانید پیروزی را پیش از عمل ببینید.</string>
+  <string name="author23">وایدال سَسون</string>
+
+  <string name="quote24">موفقیت، مجموعه‌ای از تلاش‌های کوچک است که هر روز و هر روز تکرار شده‌اند.</string>
+  <string name="author24"> روبرت کالیر (نویسنده)</string>
+
+  <string name="quote25">فهمیده‌ام هر چقدر سخت‌تر کار می‌کنم، انگار شانس بیشتری به سراغم می‌آید.</string>
+  <string name="author25">توماس جفرسون (سومین رئیس جمهور امریکا)</string>
+
+  <string name="quote26">من با هیچ کس جز خودم رقابت نمی کنم؛ هدف من مغلوب کردن آخرین کاری است که انجام داده ام</string>
+  <string name="author26">بیل گیتس</string>
+
+  <string name="quote27">باید برای کاری تلاش کنیم که فکر می کنیم نمی توانیم آن را انجام دهیم</string>
+  <string name="author27">ناشناس</string>
+
+  <string name="quote28">آفتاب به گیاهی می تابد که سر از خاک بیرون آورده باشد...</string>
+  <string name="author28">ناشناس</string>
+
+  <string name="quote29">هیچ‌کس شبیه شما نیست و زمانی که موضوع را درک کنید آیندۀ شما تغییر می‌کند</string>
+  <string name="author29">پیتر ووگد</string>
+
+  <string name="quote30">سعی کن آینده را با مصالح گذشته نسازی.</string>
+  <string name="author30">ناشناس</string>
+
+  <string name="quote31">عقب عقب نمی‌شود رو به آینده رفت.</string>
+  <string name="author31">ناشناس</string>
+
+  <string name="quote32">نمی‌توانی زندگی‌ات را یک شبه تغییر دهی، اما مسیرش را می‌توانی یک شبه عوض کنی.</string>
+  <string name="author32">جیم ران</string>
+
+  <string name="quote33">از همان لحظه‌ای که از دلتان پیروی می‌کنید، زندگی‌تان پر از شگفتی می‌شود.</string>
+  <string name="author33">پائولو کوئلیو</string>
+
+  <string name="quote34">اگر فرصت در نمی‌زند، برایش در بساز.</string>
+  <string name="author34">میلتون برن</string>
+
+  <string name="quote35">استعداد آدمی را می پوشاند و وقتی استعدادش کاهش یافت آنچه هست نمایان می شود.</string>
+  <string name="author35">نیچه</string>
+
+  <string name="quote36">جالب است هر چقدر سخت تر کار می‌کنم، موفقیت بیشتری به سراغم می آید.</string>
+  <string name="author36">توماس جفرسون</string>
+
+  <string name="quote37">همه رویاهایمان می‌توانند به واقعیت بپیوندند، اگر شهامت دنبال کردن آن ها را داشته باشیم</string>
+  <string name="author37">والت دیزنی</string>
+
+  <string name="quote38">موفقیت، توانایی رفتن از شکستی به شکست دیگر بدون از دست دادن شور و انگیزه است</string>
+  <string name="author38">چرچیل</string>
+
+  <string name="quote39">زندگی آسون تر نمی‌شه، تو قوی تر می‌شی!</string>
+  <string name="author39">ناشناس</string>
+
+  <string name="quote40">بزرگترین لذت زندگی انجام کاریه که دیگران میگن: تو نمیتونی!</string>
+  <string name="author40">ناشناس</string>
+
+  <string name="quote41">چه فکر کنید می‌توانید و چه فکر کنید نمی‌توانید، در هر دو صورت حق با شماست.</string>
+  <string name="author41">هنری فورد</string>
+
+  <string name="quote42">شما در نهایت تنها تبدیل به چیزی خواهید شد که به آن فکر می‌کنید.</string>
+  <string name="author42">بروس لی</string>
+
+  <string name="quote43">موفقیت مجموعه تلاش های کوچکی است که هر روز به طور مداوم تکرار شوند.</string>
+  <string name="author43">رابرت کلییر</string>
+
+  <string name="quote44">شیرینی یک بار موفقیت، به تلخی صد بار شکست می‌ارزد.</string>
+  <string name="author44">مارک تواین</string>
+
+  <string name="quote45">مردم اغلب می‌گویند انگیزه‌ها دوام ندارند. خب، اثر حمام نیز ماندگار نیست. به همین دلیل توصیه می‌شود روزانه دوش بگیرید.</string>
+  <string name="author45">زیگ زیگلار</string>
+
+  <string name="quote46">زمانِ شما محدود است پس آن را صرف زندگی‌ای که متعلق به فرد دیگری است نکنید.</string>
+  <string name="author46">استیو جابز</string>
+
+  <string name="quote47">با انگیزه بودن هیچ هزینه‌ای برای‌تان ندارد اما می‌تواند همه چیز را برای شما فراهم کند.</string>
+  <string name="author47">موری نیولند</string>
+
+  <string name="quote48">فرصت‌ها اتفاق نمی‌افتند، شما خالق آنها هستید.</string>
+  <string name="author48">کریس گروسر </string>
+
+  <string name="quote49">رؤیاهای‌ خودتان را بسازید در غیر این صورت فرد دیگری شما را برای ساختن رؤیایش به کار خواهد گرفت.</string>
+  <string name="author49">فرا گری</string>
+
+  <string name="quote50">ترجیح می‌دهم از اشتیاق بمیرم تا از ملالت.</string>
+  <string name="author50">وینسنت ون ‌گوگ</string>
+
+</resources>

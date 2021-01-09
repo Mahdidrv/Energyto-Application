@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/coordinator"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="energyto.activity.MainActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/iv_main_bg"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:adjustViewBounds="true"
+      android:background="@color/colorAccent"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:src="@drawable/home"/>
+
+    <energyto.activity.TypeWriter
+      android:id="@+id/tv_main_thinker"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="14dp"
+      android:fontFamily="@font/iransans_light"
+      android:text="ناشناس"
+      android:textAlignment="center"
+      android:textColor="@color/text_color"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_main_quote" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/layout_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بعدی"
+        android:textSize="20sp"
+        android:fontFamily="@font/iransans_bold"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+      android:id="@+id/fab_main"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="14dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:menu_colorNormal="@color/colorPrimary"
+      app:menu_colorPressed="@color/colorPrimary"
+      app:menu_icon="@drawable/ic_setting">
+
+      <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/ic_timer"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_label="زمان بندی روزانه" />
+
+      <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/ic_time"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_label="زمان بندی ساعتی" />
+
+      <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/ic_disable"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_label="غیرفعال کردن" />
+
+      <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/ic_share"
+        app:fab_colorNormal="@color/colorPrimary"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_label="اشتراک گذاری عکس" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <energyto.activity.TypeWriter
+      android:id="@+id/tv_main_quote"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="46dp"
+      android:layout_marginTop="72dp"
+      android:layout_marginRight="60dp"
+      android:fontFamily="@font/iransans_bold"
+      android:text="عرق‌هایی که دیروز برای پیروزی نریختم همان اشک هایی‌ست که امروز برای شکست می‌ریزم "
+      android:textAlignment="center"
+      android:textColor="@color/text_color"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/iv_main_bg" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

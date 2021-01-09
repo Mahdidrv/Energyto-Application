@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <font
+    app:font="@font/iransans_bold"
+    app:fontStyle="normal"
+    app:fontWeight="600"/>
+
+  <font
+    app:font="@font/iransans_light"
+    app:fontStyle="normal"
+    app:fontWeight="400"/>
+
+</font-family>

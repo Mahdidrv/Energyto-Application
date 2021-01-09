@@ -7,7 +7,7 @@ import java.util.List;
 import io.reactivex.Completable;
 import io.reactivex.Single;
 
-class MainViewModel {
+public class MainViewModel {
   private Context context;
   private QuoteDao quoteDao;
 

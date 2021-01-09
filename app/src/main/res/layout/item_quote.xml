@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginHorizontal="14dp"
+  android:layout_marginVertical="6dp"
+  android:background="@drawable/container_quote"
+  android:padding="8dp">
+
+  <ImageView
+    android:id="@+id/iv_item_eraser"
+    android:layout_width="42dp"
+    android:layout_height="42dp"
+    android:padding="8dp"
+    android:src="@drawable/ic_eraser"
+    app:layout_constraintBottom_toTopOf="@+id/iv_item_share"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/iv_item_share"
+    android:layout_width="42dp"
+    android:layout_height="42dp"
+    android:padding="8dp"
+    android:src="@drawable/ic_share"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iv_item_eraser" />
+
+  <TextView
+    android:id="@+id/tv_item_quote"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:fontFamily="@font/iransans_bold"
+    android:maxLines="2"
+    android:text="@string/quote12"
+    android:textColor="@color/text_color"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.32999998" />
+
+  <TextView
+    android:id="@+id/tv_item_author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/iransans"
+    android:maxLines="2"
+    android:text="@string/author4"
+    android:textColor="@color/text_color"
+    android:textSize="10sp"
+    app:layout_constraintEnd_toEndOf="@+id/tv_item_quote"
+    app:layout_constraintTop_toBottomOf="@+id/tv_item_quote" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

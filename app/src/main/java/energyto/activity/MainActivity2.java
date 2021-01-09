@@ -31,7 +31,7 @@ import ir.mahdidrv.energyto.R;
 */
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
 
   private TypeWriter quoteTv;
   private TypeWriter authorTv;
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     switch (v.getId()) {
 
       case R.id.fab_day:
-        TimeHelper.openTimePicker(MainActivity.this, true, (view, hour, minute) -> {
+        TimeHelper.openTimePicker(MainActivity2.this, true, (view, hour, minute) -> {
           Calendar calNow = Calendar.getInstance();
           Calendar calSet = (Calendar) calNow.clone();
 
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         break;
       case R.id.fab_hour:
-        new TimerAlertDialog(MainActivity.this, coordinator, time -> {
+        new TimerAlertDialog(MainActivity2.this, coordinator, time -> {
           alarmManager(time);
           startService(serviceIntent);
         });
@@ -162,15 +162,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   private void alarmManager(long time) {
 
     alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-    intent = new Intent(MainActivity.this, MyBroadcastReceiver.class);
-    pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 1, intent, 0);
+    intent = new Intent(MainActivity2.this, MyBroadcastReceiver.class);
+    pendingIntent = PendingIntent.getBroadcast(MainActivity2.this, 1, intent, 0);
     alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), time, pendingIntent);
   }
 
   private void alarmManager(boolean mode) {
     alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-    intent = new Intent(MainActivity.this, MyBroadcastReceiver.class);
-    pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 1, intent, 0);
+    intent = new Intent(MainActivity2.this, MyBroadcastReceiver.class);
+    pendingIntent = PendingIntent.getBroadcast(MainActivity2.this, 1, intent, 0);
     alarmManager.cancel(pendingIntent);
 
   }

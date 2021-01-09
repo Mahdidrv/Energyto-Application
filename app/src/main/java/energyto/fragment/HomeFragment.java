@@ -39,9 +39,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
   private TypeWriter authorTv;
   private ConstraintLayout nextLayout;
   private MainViewModel mainViewModel;
-  private Intent serviceIntent;
   private CoordinatorLayout coordinator;
 
+  private Intent serviceIntent;
   private AlarmManager alarmManager;
   private PendingIntent pendingIntent;
   private Intent intent;

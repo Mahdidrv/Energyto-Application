@@ -21,6 +21,9 @@ public class MainViewModel {
     return quoteDao.insert(quote);
   }
 
+  public Completable removeQuote(Quote quote) { return quoteDao.remove(quote);
+  }
+
   public void insertQuoteWithoutRx(Quote quote) {
     quoteDao.insertWithoutRx(quote);
   }

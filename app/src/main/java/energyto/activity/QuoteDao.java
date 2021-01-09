@@ -3,6 +3,7 @@ package energyto.activity;
 import java.util.List;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import io.reactivex.Completable;
@@ -25,5 +26,8 @@ public interface QuoteDao {
 
   @Query("DELETE FROM tbl_quote")
   void deleteAll();
+
+  @Delete
+  Completable remove(Quote quote);
 
 }

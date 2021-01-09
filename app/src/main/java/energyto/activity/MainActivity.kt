@@ -2,6 +2,10 @@ package energyto.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import energyto.fragment.HomeFragment
+import energyto.fragment.QuoteFragment
+import energyto.fragment.SettingFragment
+import energyto.widget.MTab
 import ir.mahdidrv.energyto.R
 
 /*
@@ -15,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
 
+        val makeTab = MTab(this,R.id.tabLayout, R.id.viewPager)
+        makeTab.add(QuoteFragment().javaClass,"quote")
+        makeTab.add(HomeFragment().javaClass,"home")
+        makeTab.add(SettingFragment().javaClass,"setting")
 
     }
 }

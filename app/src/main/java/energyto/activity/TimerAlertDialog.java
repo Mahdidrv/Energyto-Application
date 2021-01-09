@@ -10,7 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import ir.mahdidrv.energyto.R;
 
-class TimerAlertDialog {
+public class TimerAlertDialog {
 
 
   private Context context;

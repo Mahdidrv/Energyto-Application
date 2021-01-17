@@ -20,8 +20,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
   public void onReceive(Context context, Intent intent) {
     mainViewModel = new MainViewModel(context);
 
-        doTheJob();
-/*    new Thread(() -> {
+      doTheJob();
+   /* new Thread(() -> {
       while (true) {
         doTheJob();
         try {
@@ -30,8 +30,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
           e.printStackTrace();
         }
       }
-    }).start();*/
-
+    }).start();
+*/
 
 
 

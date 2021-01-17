@@ -83,9 +83,9 @@ class QuoteFragment : BaseFragment(){
             override fun onItemShare(item: Quote, position: Int) {
                 val shareIntent = Intent()
                 shareIntent.action = Intent.ACTION_SEND
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "${item.content} \n ${item.auther}")
                 shareIntent.type = "text/plain"
-                startActivity(Intent.createChooser(shareIntent,"گزینهای را انتخاب کنید"))
+                shareIntent.putExtra(Intent.EXTRA_TEXT,"${item.content} \n ${item.auther}")
+                startActivity(Intent.createChooser(shareIntent,"اپلیکیشن مورد نظر را انتخاب کنید"))
             }
 
         })

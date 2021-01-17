@@ -41,7 +41,7 @@ public class TimerAlertDialog {
           setData(onTime, AlarmManager.INTERVAL_HOUR * 4, "انرژیتو هر چهار ساعت بهت یه نوتیفیکیشن نشون میده", coordinator);
           break;
         case 4:
-          setData(onTime, AlarmManager.INTERVAL_DAY * 8, "انرژیتو هر هشت ساعت بهت یه نوتیفیکیشن نشون میده", coordinator);
+          setData(onTime, AlarmManager.INTERVAL_HOUR * 8, "انرژیتو هر هشت ساعت بهت یه نوتیفیکیشن نشون میده", coordinator);
           break;
       }
 

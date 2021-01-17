@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         makeTab.add(QuoteFragment().javaClass,"quote")
         makeTab.add(HomeFragment().javaClass,"home")
         makeTab.add(SettingFragment().javaClass,"setting")
+        makeTab.defalutTab(2)
 
     }
 }

@@ -27,6 +27,12 @@ class MTab(activity: AppCompatActivity, @IdRes tabLayoutId: Int, @IdRes viewPage
 
     }
 
+    fun defalutTab(index: Int){
+        val indexPage = index - 1;
+        tabLayout.getTabAt(indexPage)!!.select()
+        viewPager.setCurrentItem(indexPage);
+    }
+
     fun add(fragmentClass: Class<out Fragment>, title: String?, @DrawableRes iconId: Int) {
         var item = Item(fragmentClass, title!!, iconId)
         adapter.set(item)

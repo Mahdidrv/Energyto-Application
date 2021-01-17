@@ -27,7 +27,7 @@ public class QuotesService extends Service implements MyBroadcastReceiver.Socket
   private NotificationManager notificationManager;
   private NotificationCompat.Builder notification;
   private Notification newContentNotify;
-  RemoteViews remoteViews;
+  private RemoteViews remoteViews;
   public static boolean IS_RUNNING = false;
 
 
@@ -48,8 +48,6 @@ public class QuotesService extends Service implements MyBroadcastReceiver.Socket
 
   @Override
   public int onStartCommand(Intent intent, int flags, int startId) {
-
-    // convert to foreground service
 
     newNotif("از زندگی\u200Cات رؤیا و از رؤیاهایت واقعیت بساز.");
     return super.onStartCommand(intent, flags, startId);

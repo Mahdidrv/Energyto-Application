@@ -1,4 +1,4 @@
-package energyto.activity;
+package energyto.widget;
 
 import android.content.Context;
 import android.os.Handler;

@@ -1,9 +1,12 @@
-package energyto.activity;
+package energyto.main;
 
 import android.content.Context;
 
 import java.util.List;
 
+import energyto.model.database.AppDatabase;
+import energyto.model.Quote;
+import energyto.model.database.QuoteDao;
 import io.reactivex.Completable;
 import io.reactivex.Single;
 

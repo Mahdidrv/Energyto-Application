@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.github.clans.fab.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Calendar;
@@ -19,12 +18,12 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
-import energyto.activity.MainViewModel;
-import energyto.activity.MyBroadcastReceiver;
-import energyto.activity.Quote;
-import energyto.activity.QuotesService;
-import energyto.activity.TimerAlertDialog;
-import energyto.activity.TypeWriter;
+import energyto.main.MainViewModel;
+import energyto.main.MyBroadcastReceiver;
+import energyto.model.Quote;
+import energyto.main.QuotesService;
+import energyto.widget.TimerAlertDialog;
+import energyto.widget.TypeWriter;
 import energyto.widget.TimeHelper;
 import io.reactivex.Single;
 import io.reactivex.SingleObserver;
@@ -37,9 +36,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
   private TypeWriter quoteTv;
   private TypeWriter authorTv;
+
   private ConstraintLayout nextLayout;
-  private MainViewModel mainViewModel;
   private CoordinatorLayout coordinator;
+  private MainViewModel mainViewModel;
 
   private Intent serviceIntent;
   private AlarmManager alarmManager;
@@ -68,17 +68,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     authorTv = view.findViewById(R.id.tv_main_thinker);
     coordinator = view.findViewById(R.id.coordinator);
     nextLayout = view.findViewById(R.id.layout_next);
+
     nextLayout.setOnClickListener(v -> {
         getNewQuote();
-      }
-    );
-
-    FloatingActionButton test = view.findViewById(R.id.fab_hour);
-    test.setOnClickListener(v -> {
-      new TimerAlertDialog(getContext(), coordinator, time -> {
-        alarmManager(time);
-        getActivity().startService(serviceIntent);
-      });
       }
     );
 
@@ -86,6 +78,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         getNewQuote();
       }
     );
+
   }
 
   private void getNewQuote() {
@@ -116,6 +109,23 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         }
       });
 
+
+  }
+
+
+  private void alarmManager(long time) {
+
+    alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+    intent = new Intent(getContext(), MyBroadcastReceiver.class);
+    pendingIntent = PendingIntent.getBroadcast(getContext(), 1, intent, 0);
+    alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), time, pendingIntent);
+  }
+
+  private void alarmManager(boolean mode) {
+    alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+    intent = new Intent(getContext(), MyBroadcastReceiver.class);
+    pendingIntent = PendingIntent.getBroadcast(getContext(), 1, intent, 0);
+    alarmManager.cancel(pendingIntent);
 
   }
 
@@ -157,29 +167,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         } else {
           Snackbar.make(coordinator, "تایمری تنظیم نیست", Snackbar.LENGTH_LONG).show();
         }
-
-
         break;
-      case R.id.fab_share:
-        Snackbar.make(coordinator, "تو ریلیز بعدی حلش می کنیم :)", Snackbar.LENGTH_LONG).show();
-        break;
+
     }
-  }
-
-  private void alarmManager(long time) {
-
-    alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
-    intent = new Intent(getContext(), MyBroadcastReceiver.class);
-    pendingIntent = PendingIntent.getBroadcast(getContext(), 1, intent, 0);
-    alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), time, pendingIntent);
-  }
-
-  private void alarmManager(boolean mode) {
-    alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
-    intent = new Intent(getContext(), MyBroadcastReceiver.class);
-    pendingIntent = PendingIntent.getBroadcast(getContext(), 1, intent, 0);
-    alarmManager.cancel(pendingIntent);
-
   }
 
 }

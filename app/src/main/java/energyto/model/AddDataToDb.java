@@ -1,13 +1,14 @@
-package energyto.activity;
+package energyto.model;
 
 import android.content.Context;
 
+import energyto.main.MainViewModel;
 import io.reactivex.CompletableObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
-class AddDataToDb {
+public class AddDataToDb {
   MainViewModel mainViewModel;
   private Context context;
   String content;

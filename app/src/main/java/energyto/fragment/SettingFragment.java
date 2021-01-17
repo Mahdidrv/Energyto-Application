@@ -19,9 +19,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
-import energyto.activity.MyBroadcastReceiver;
-import energyto.activity.QuotesService;
-import energyto.activity.TimerAlertDialog;
+import energyto.main.MyBroadcastReceiver;
+import energyto.main.QuotesService;
+import energyto.widget.TimerAlertDialog;
 import energyto.widget.TimeHelper;
 import ir.mahdidrv.energyto.R;
 

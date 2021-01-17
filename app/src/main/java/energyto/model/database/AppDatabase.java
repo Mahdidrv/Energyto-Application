@@ -1,4 +1,4 @@
-package energyto.activity;
+package energyto.model.database;
 
 import android.content.Context;
 
@@ -7,6 +7,9 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+import energyto.main.MainViewModel;
+import energyto.model.AddDataToDb;
+import energyto.model.Quote;
 
 
 @Database(entities = {Quote.class}, version = 1, exportSchema = true)

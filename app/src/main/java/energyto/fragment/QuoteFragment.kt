@@ -1,10 +1,13 @@
 package energyto.fragment
 
+import android.content.Intent
 import android.util.Log
-import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.github.clans.fab.FloatingActionButton
-import energyto.activity.*
+import energyto.main.*
+import energyto.base.BaseFragment
+import energyto.model.Quote
 import io.reactivex.CompletableObserver
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -13,16 +16,18 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import ir.mahdidrv.energyto.R
 
-class QuoteFragment : BaseFragment() {
+class QuoteFragment : BaseFragment(){
 
     override var layoutRes: Int = R.layout.fragment_quote
     var disposable = CompositeDisposable()
     lateinit var  mainVM: MainViewModel
     lateinit var  quoteAdapter: QuoteAdapter
+    lateinit var  bottomSheet: AddQuoteBottomSheetDialog
 
     override fun setViews() {
         mainVM = MainViewModel(context)
         quoteAdapter = QuoteAdapter()
+        bottomSheet = AddQuoteBottomSheetDialog()
 
         var fab = view!!.findViewById<FloatingActionButton>(R.id.fab_add)
         var rv = view!!.findViewById<RecyclerView>(R.id.rv_quote_list)
@@ -51,11 +56,18 @@ class QuoteFragment : BaseFragment() {
 
 
         fab.setOnClickListener {
-            val quote = Quote("hihihi","hi")
-            quoteAdapter.addQuote(quote)
-            addQuote(quote)
-            rv.smoothScrollToPosition(quoteAdapter.itemCount)
+            bottomSheet.show(activity!!.supportFragmentManager, "BottomSheetEx")
         }
+
+        bottomSheet.setAddQuoteCallBack(object: AddQuoteCallBack<Quote>{
+            override fun add(quote: Quote) {
+                Toast.makeText(context,"جمله ی شما اضافه شد :)",Toast.LENGTH_LONG).show()
+                quoteAdapter.addQuote(quote)
+                rv.smoothScrollToPosition(quoteAdapter.itemCount)
+                addQuote(quote)
+            }
+
+        })
 
 
         quoteAdapter.setOnRvItemClickListener(object : OnRvItemClickListener<Quote> {
@@ -69,16 +81,14 @@ class QuoteFragment : BaseFragment() {
             }
 
             override fun onItemShare(item: Quote, position: Int) {
-
+                val shareIntent = Intent()
+                shareIntent.action = Intent.ACTION_SEND
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "${item.content} \n ${item.auther}")
+                shareIntent.type = "text/plain"
+                startActivity(Intent.createChooser(shareIntent,"گزینهای را انتخاب کنید"))
             }
 
         })
-
-
-        Log.i("TAG", "onSuccess: ")
-        quoteAdapter.addQuote(Quote("سلام سلام سلام", "مهدی"))
-        rv.smoothScrollToPosition(0)
-
     }
 
     fun addQuote(quote: Quote){
@@ -126,4 +136,5 @@ class QuoteFragment : BaseFragment() {
         super.onDestroy()
         disposable.clear()
     }
+
 }

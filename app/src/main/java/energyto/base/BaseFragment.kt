@@ -1,4 +1,4 @@
-package energyto.activity
+package energyto.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

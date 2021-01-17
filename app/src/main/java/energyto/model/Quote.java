@@ -1,4 +1,4 @@
-package energyto.activity;
+package energyto.model;
 
 
 import androidx.room.ColumnInfo;

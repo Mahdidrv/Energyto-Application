@@ -80,7 +80,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <energyto.activity.TypeWriter
+    <energyto.widget.TypeWriter
       android:id="@+id/tv_main_thinker"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
     </com.github.clans.fab.FloatingActionMenu>
 
 
-    <energyto.activity.TypeWriter
+    <energyto.widget.TypeWriter
       android:id="@+id/tv_main_quote"
       android:layout_width="0dp"
       android:layout_height="wrap_content"

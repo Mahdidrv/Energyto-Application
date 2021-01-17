@@ -1,4 +1,4 @@
-package energyto.activity;
+package energyto.main;
 
 import android.app.Notification;
 import android.app.NotificationChannel;

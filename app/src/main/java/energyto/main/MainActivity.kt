@@ -1,4 +1,4 @@
-package energyto.activity
+package energyto.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

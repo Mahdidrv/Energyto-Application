@@ -1,4 +1,4 @@
-package energyto.activity;
+package energyto.widget;
 
 import android.app.AlarmManager;
 import android.app.AlertDialog;

@@ -1,10 +1,61 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
   <!-- Base application theme. -->
-  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+  <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
     <!-- Customize your theme here. -->
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+
+  <!-- region TextInputLayout & TextInputEditText styles -->
+  <style name="TextInputLayout.OutlineBox.CustomFont" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="android:theme">@style/ThemeOverlay.TextInputEditText.OutlinedBox.CustomFont
+    </item>
+  </style>
+
+  <style name="ThemeOverlay.TextInputEditText.OutlinedBox.CustomFont" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="editTextStyle">@style/TextInputEditText.OutlinedBox.CustomFont</item>
+  </style>
+
+  <style name="TextInputEditText.OutlinedBox.CustomFont" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+    <item name="android:fontFamily">@font/iransans_light</item>
+  </style>
+
+  <style name="CustomFontTextInputLayout" parent="Widget.Design.TextInputLayout">
+    <item name="hintTextAppearance">@style/TextInputLayoutHintText</item>
+    <item name="helperTextTextAppearance">@style/TextInputLayoutHelperText</item>
+    <item name="errorTextAppearance">@style/TextInputLayoutErrorText</item>
+  </style>
+
+  <style name="TextInputLayoutHintText" parent="TextAppearance.Design.Hint">
+    <item name="android:fontFamily">@font/iransans_light</item>
+  </style>
+
+  <style name="TextInputLayoutHelperText" parent="TextAppearance.Design.HelperText">
+    <item name="android:fontFamily">@font/iransans_light</item>
+  </style>
+
+  <style name="TextInputLayoutErrorText" parent="TextAppearance.Design.Error">
+    <item name="android:fontFamily">@font/iransans_light</item>
+  </style>
+
+  <style name="InputTextContent" parent="TextInputLayout.OutlineBox.CustomFont">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">220dp</item>
+    <item name="android:layout_marginEnd">14dp</item>
+    <item name="android:layout_marginStart">14dp</item>
+    <item name="android:gravity">right</item>
+    <item name="android:textDirection">rtl</item>
+  </style>
+
+  <style name="InputTextAuthor" parent="TextInputLayout.OutlineBox.CustomFont">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginEnd">14dp</item>
+    <item name="android:layout_marginStart">14dp</item>
+    <item name="android:gravity">right</item>
+    <item name="android:textDirection">rtl</item>
   </style>
 
 </resources>
